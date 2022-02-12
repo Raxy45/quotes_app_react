@@ -1,4 +1,4 @@
-const FIREBASE_DOMAIN = 'https://react-http-hook-a2218-default-rtdb.firebaseio.com/';
+const FIREBASE_DOMAIN = process.env.REACT_APP_firebase_quotes_app;
 
 export async function getAllQuotes() {
   const response = await fetch(`${FIREBASE_DOMAIN}/quotes.json`);
